@@ -40,8 +40,7 @@ First, you need to generate an SSH key on the **master node** that will be used 
 1. On the **master node**, open a terminal and run the following command to generate an RSA SSH key:
     
     ```bash
-    bash
-    Copy
+   
     ssh-keygen -t rsa -b 4096
     
     ```
@@ -59,8 +58,7 @@ Now, copy the generated **public key** to both the **web** and **database nodes*
 1. On the **master node**, use the `ssh-copy-id` command to copy the public key to the **web server** (`web-sv`):
     
     ```bash
-    bash
-    Copy
+ 
     ssh-copy-id ubuntu@13.126.249.128   # Web Node
     
     ```
@@ -71,8 +69,7 @@ Now, copy the generated **public key** to both the **web** and **database nodes*
 1. Repeat the process for the **database server** (`db-sv`):
     
     ```bash
-    bash
-    Copy
+  
     ssh-copy-id ubuntu@13.203.156.161   # Database Node
     
     ```
